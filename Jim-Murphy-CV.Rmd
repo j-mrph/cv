@@ -1,0 +1,96 @@
+---
+name: Jim Murphy
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: MPhys (Hons)
+position: Data Scientist
+address: London
+#profilepic: "./img/me.jpg"
+email: jimmurphy10@protonmail.com
+headcolor: 414141
+output: 
+  vitae::awesomecv:
+    keep_tex: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# About
+I am a data scientist passionate about deriving new insights by building integrated and intuitive solutions. My focus is on developing web based applications, data visualisation, interactive reporting and automating data pipelines to empower end users. Experienced at utilising cloud computing platforms for large scale processing as well as deploying and maintaining robust, user friendly analytics for use in production environments. 
+
+
+# Technical Skills
+ 
+## Data Science
+Interactive data visualisation, big data wrangling, APIs, text mining, machine learning, process automation, relational databases, web scraping, OAuth. 
+
+## Software
+RStudio, SQL Server, Tableau, Excel, Cloud computing architectures (Azure, Databricks, DataFactory), Bash, LaTeX.
+
+## Languages 
+Adept user of R, SQL, Python (Pyspark)
+
+Familiarty with Unix, Java programming, MATLAB, HTML, JavaScript 
+
+<br>
+
+# Experience
+
+```{r work exp}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  
+   # Analyst
+  
+  
+  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Developed reproducible cloud based pipelines for cleaning and conforming incoming varied audit data into a standardised database using combination of DataFactory, Databricks and SQL.",
+  
+  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Introduced robust app user authentication using OAuth and Azure Active Directory in service wide R Shiny apps for large scale user tracking and security measures regarding data access.",  
+  
+  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Deployed and maintained service wide audit automation analytic with 300+ users.",
+  
+  
+  
+  
+  #Secondment
+  
+  "Data Analyst (secondment)", "Government Actuary's Department", "Remote", "Spring 2021", "Developed actuarial tools in Python Dash to increase speed and quality of salary modelling",
+ 
+  
+   "Data Analyst (secondment)", "Government Actuary's Department", "Remote", "Spring 2021", "Introduced a small development team to effective version control using git to better manage deployments and collaboration on shared code.", 
+  
+  
+  
+  
+  #data science internship
+  
+  "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Built risk assessment Tableau dashboards for use by the audit team of the BBC reviewing risk in reversals and purchases in general ledger data.",
+  
+  "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Developed an automated sprint report system using DevOps API, for review by my team to assess bottlenecks and progress against key objectives still in use today.",
+  
+ # "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Deployed bespoke R Shiny application for interactive analysis of group structure and intra-company transactions at the BBC for the audit team.",
+  
+  "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Built application making use of web scraping, text analysis and visualisation to bulk confirm audit fees of NAO clients garnering interest from external audit institutions. ",
+  
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+<br><br>
+
+# Education
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Master of Physics (First Class)", "University of Liverpool", "Liverpool, U.K.", "Sep. 2013 - Jul. 2017", "Making use of strong numerical and analytical skills, the ability to find underlying patterns in seemingly chaotic data allowed me to excel during my studies.",
+  
+    "Master of Physics (First Class)", "University of Liverpool", "Liverpool, U.K.", "Sep. 2013 - Jul. 2017", "Harnessed my ability to work effectively as part of a team or on an independent basis to deliver accurate results regardless of pressure or workload.",
+  
+  "Master of Physics (First Class)", "University of Liverpool", "Liverpool, U.K.", "Sep. 2013 - Jul. 2017", "In weekly report writing and lab work tasks I have enhanced my written and verbal communication skills allowing me to produce concise documents within strict time constraints."
+  
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```

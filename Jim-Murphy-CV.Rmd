@@ -5,6 +5,8 @@ qualifications: MPhys (Hons)
 position: Data Scientist
 address: London
 #profilepic: "./img/me.jpg"
+www: jmrph.org
+github: j-mrph
 email: jimmurphy10@protonmail.com
 headcolor: 414141
 output: 

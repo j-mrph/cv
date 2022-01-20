@@ -30,10 +30,10 @@ I am a data scientist passionate about deriving new insights by building integra
 Interactive data visualisation, big data wrangling, APIs, text mining, machine learning, process automation, relational databases, web scraping, OAuth. 
 
 ## Software
-RStudio, SQL Server, Tableau, Excel, Cloud computing architectures (Azure, Databricks, DataFactory), Bash, LaTeX.
+RStudio, SQL Server, Tableau, Jupyter Notebooks, Cloud computing architectures (Azure, Databricks, DataFactory), Bash, LaTeX.
 
 ## Languages 
-Adept user of R, SQL, Python (Pyspark)
+Adept user of R, SQL, Python (including pyspark)
 
 Familiarty with Unix, Java programming, MATLAB, HTML, JavaScript 
 
@@ -48,7 +48,7 @@ tribble(
    # Analyst
   
   
-  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Developed reproducible cloud based pipelines for cleaning and conforming incoming varied audit data into a standardised database using combination of DataFactory, Databricks and SQL.",
+  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Developed reproducible cloud based pipelines for cleaning and conforming incoming varied audit data totalling billions of records into a standardised database using combination of DataFactory, Databricks and SQL.",
   
   "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Introduced robust app user authentication using OAuth and Azure Active Directory in service wide R Shiny apps for large scale user tracking and security measures regarding data access.",  
   

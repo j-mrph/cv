@@ -32,7 +32,7 @@ My focus is on automating data pipelines, interactive reporting and developing w
 Big data wrangling, relational databases, DevOps CI/CD, interactive data visualisation, APIs, text mining, machine learning, process automation, web scraping, OAuth. 
 
 ## Software
-RStudio, SQL Server, Tableau, Jupyter Notebooks, Cloud computing architectures (Azure, Databricks, DataFactory), Bash, LaTeX.
+Cloud computing architectures (Azure, Databricks, DataFactory), RStudio, SQL Server, Tableau, Jupyter Notebooks, Bash, LaTeX.
 
 ## Languages 
 Adept user of R, SQL, Python (including pyspark)
@@ -77,7 +77,7 @@ tribble(
   
  # "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Deployed bespoke R Shiny application for interactive analysis of group structure and intra-company transactions at the BBC for the audit team.",
   
-  "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Built application making use of web scraping, text analysis and visualisation to bulk confirm audit fees of NAO clients garnering interest from international audit institutions. ",
+  "Data Science Intern", "National Audit Office", "London, U.K.", "Aug. 2018 - Sep. 2019", "Built application making use of web scraping, text analysis and visualisation to bulk confirm audit fees of NAO clients garnering interest from international audit institutions.",
   
 ) %>% 
   detailed_entries(role, dates, company, loc, details)

@@ -2,7 +2,7 @@
 name: Jim Murphy
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: MPhys (Hons)
-position: Data Scientist
+position: Data Engineer & Data Analytics Specialist
 address: London
 #profilepic: "./img/me.jpg"
 www: jmrph.org
@@ -21,14 +21,14 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # About
-I am a data scientist passionate about deriving new insights by building integrated and intuitive solutions. 
+I am a data engineer passionate about deriving new insights by building integrated and intuitive solutions. 
 
-My focus is on automating data pipelines, interactive reporting and developing web applications to empower end users. Experienced at utilising cloud computing platforms for large scale processing as well as deploying and maintaining robust, user friendly analytics for use in production environments. 
+Experienced at utilising cloud computing platforms for large scale processing as well as deploying and maintaining robust, user friendly analytics for use in production environments. 
 
 
 # Technical Skills
  
-## Data Science
+## Data Engineering & Science
 Big data wrangling, relational databases, DevOps CI/CD, interactive data visualisation, APIs, text mining, machine learning, process automation, web scraping, OAuth. 
 
 ## Software
@@ -50,21 +50,23 @@ tribble(
    # Analyst
   
   
-  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Developed reproducible cloud based pipelines for cleaning and conforming incoming varied audit data totalling billions of records into a standardised database using combination of DataFactory, Databricks and SQL.",
+  "Data Engineer / Data Analytics Dev", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Developed reproducible cloud based pipelines in Pyspark conforming incoming varied audit data totalling billions of records into a standardised database using combination of DataFactory, Databricks and SQL.",
   
-  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Introduced robust app user authentication using OAuth and Azure Active Directory in service wide R Shiny apps for large scale user tracking and security measures regarding data access.",  
+    "Data Engineer / Data Analytics Dev", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Built and deployed live service wide audit automation analytic with 300+ users. Integrating CI/CD best practices with built in unit testing in Azure release pipeline.",
   
-  "Data Analyst", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Deployed and maintained service wide audit automation analytic with 300+ users.",
+  "Data Engineer / Data Analytics Dev", "National Audit Office", "London, U.K.", "Sep. 2019 - Present", "Introduced robust app user authentication using OAuth and Azure Active Directory in service wide R Shiny apps for large scale user tracking and security measures regarding data access.",  
+  
+
   
   
   
   
   #Secondment
   
-  "Data Analyst (secondment)", "Government Actuary's Department", "Remote", "Spring 2021", "Developed actuarial tools in Python Dash to increase speed and quality of salary modelling",
+  "Data Analytics Developer (secondment)", "Government Actuary's Department", "Remote", "Spring 2021", "Developed actuarial tools in Python Dash to increase speed and quality of salary modelling.",
  
   
-   "Data Analyst (secondment)", "Government Actuary's Department", "Remote", "Spring 2021", "Introduced a small development team to effective version control using git to better manage deployments and collaboration on shared code.", 
+   "Data Analytics Developer (secondment)", "Government Actuary's Department", "Remote", "Spring 2021", "Introduced a small development team to effective version control using git to better manage deployments and collaboration on shared code.", 
   
   
   

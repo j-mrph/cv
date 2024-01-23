@@ -7,7 +7,7 @@ address: London
 #profilepic: "./img/me.jpg"
 www: jmrph.org
 github: j-mrph
-email: jimmurphy10@protonmail.com
+email: jimmurphy10@proton.me
 headcolor: 414141
 output: 
   vitae::awesomecv:

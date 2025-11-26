@@ -1,0 +1,54 @@
+name: Knit CV and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Jim-Murphy-CV.Rmd'
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Cache R packages
+        uses: actions/cache@v3
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-r-${{ hashFiles('**/*.R', '**/*.Rmd') }}
+          restore-keys: ${{ runner.os }}-r-
+
+      - name: Setup Pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
+      - name: Setup TeX
+        uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Install dependencies
+        run: |
+          install.packages("rmarkdown")
+          install.packages("vitae")
+          install.packages("dplyr")
+        shell: Rscript {0}
+
+      - name: Render CV PDF
+        run: Rscript -e 'rmarkdown::render("Jim-Murphy-CV.Rmd")'
+
+      - name: Copy PDF to assets
+        run: |
+          mkdir -p assets
+          cp Jim-Murphy-CV.pdf assets/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .

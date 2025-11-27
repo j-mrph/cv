@@ -42,13 +42,14 @@ jobs:
       - name: Render CV PDF
         run: Rscript -e 'rmarkdown::render("Jim-Murphy-CV.Rmd")'
 
-      - name: Copy PDF to assets
+      - name: Populate site files
         run: |
-          mkdir -p assets
-          cp Jim-Murphy-CV.pdf assets/
+          mkdir -p site/assets
+          cp README.md site/
+          cp Jim-Murphy-CV.pdf site/assets/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./site
